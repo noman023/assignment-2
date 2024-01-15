@@ -1,0 +1,148 @@
+/* mulish font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;800&display=swap");
+
+/* common styles start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+header,
+main {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.mt-mb {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.color-primary {
+  color: #ff5400;
+}
+
+.color-black {
+  color: #131318;
+}
+
+.color-gray {
+  color: #5a5a5d;
+}
+
+.section-title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.btn-primary {
+  max-width: 174px;
+  background-color: #ff5400;
+  color: white;
+}
+/* common styles end */
+
+/* header section styles start */
+.banner-section {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../images/banner.png") no-repeat center/cover;
+  padding: 105px 50px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.banner-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.banner-description {
+  width: 70%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.search-place {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 15px 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-style {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+}
+
+.search-place input {
+  width: 154px;
+  padding-left: 20px;
+}
+
+.input-style:focus {
+  outline: 0;
+}
+
+.input-style select {
+  border: none;
+}
+
+.select-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-place button {
+  width: 174px;
+  border: none;
+  padding: 15px 30px;
+}
+/* header section styles end */
+
+/* Responsive Styles start */
+
+/* Small Devices */
+@media screen and (max-width: 576px) {
+  .banner-description {
+    width: 100%;
+  }
+
+  .search-place {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .search-place {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Responsive Styles end */
