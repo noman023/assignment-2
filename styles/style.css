@@ -140,7 +140,7 @@ main {
 }
 
 .tour-content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .tour-content button {
@@ -154,13 +154,69 @@ main {
   height: 550px;
 }
 /* Tour section style end */
+
+/* why choose us section start */
+.choose-us-content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choose-us-content > h2 {
+  margin-bottom: 24px;
+}
+
+.choose-us-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.choose-us-card-container .card,
+.last-card-div .card {
+  width: calc(50% - 24px);
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background-color: rgba(251, 181, 99, 0.05);
+  padding: 35px;
+}
+
+.card > h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.choose-us-card-container .card2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background-color: rgba(41, 206, 246, 0.05);
+}
+
+.last-card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+/* why choose us section end */
 /* main section end */
 
 /* Responsive Styles start */
 
 /* Small Devices */
 @media screen and (max-width: 576px) {
-  header {
+  header,
+  main {
     padding: 20px;
   }
 
@@ -180,11 +236,35 @@ main {
 
   .tour-section {
     flex-direction: column;
-    padding: 20px;
   }
 
   .tour-img {
     margin-top: 20px;
+  }
+
+  /* why choose us section */
+  .choose-us-section {
+    margin: 20px;
+  }
+
+  .choose-us-content {
+    width: 100%;
+  }
+
+  .choose-us-card-container,
+  .last-card-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .choose-us-section .card {
+    width: 100%;
+  }
+
+  .last-card-div {
+    margin-top: 0;
   }
 }
 
