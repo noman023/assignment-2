@@ -211,6 +211,52 @@ main {
 /* why choose us section end */
 /* main section end */
 
+/* footer section styles start */
+footer {
+  background-color: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  padding: 110px 336px;
+}
+
+.footer-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-head > h3 {
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.footer-head > img {
+  width: 40px;
+  height: 46.673px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  margin-top: 32px;
+  list-style: none;
+}
+
+footer > ul li a {
+  color: #131318;
+}
+
+hr {
+  background-color: rgba(19, 19, 24, 0.1);
+  margin: 50px 0;
+}
+/* footer section styles end */
+
 /* Responsive Styles start */
 
 /* Small Devices */
@@ -266,6 +312,15 @@ main {
   .last-card-div {
     margin-top: 0;
   }
+
+  /* footer */
+  footer {
+    padding: 33px 44px;
+  }
+
+  hr {
+    margin: 25px 0;
+  }
 }
 
 /* Medium Devices */
@@ -281,6 +336,10 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+
+  footer {
+    padding: 100px 200px;
   }
 }
 
