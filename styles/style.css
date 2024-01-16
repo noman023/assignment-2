@@ -38,7 +38,7 @@ main {
 }
 
 .btn-primary {
-  max-width: 174px;
+  width: 174px;
   background-color: #ff5400;
   color: white;
 }
@@ -209,6 +209,88 @@ main {
 }
 
 /* why choose us section end */
+
+/* Newsletter section start */
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.form-section {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  background: #fff;
+  padding: 40px;
+}
+
+.form-section h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.form-section p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.form-section > hr {
+  background-color: rgba(19, 19, 24, 0.1);
+  margin-bottom: 24px;
+}
+
+.form-section input[type="text"],
+input[type="email"] {
+  background-color: rgba(19, 19, 24, 0.05);
+  border-radius: 8px;
+  padding: 16px 0;
+  border: 0;
+  padding-left: 20px;
+  width: 95%;
+  margin-bottom: 16px;
+}
+
+.form-section input:focus {
+  outline: 0;
+}
+
+.form-section input[type="button"] {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 15px 0;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.newsletter-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.rotate-text {
+  padding: 20px 40px;
+  border-radius: 16px;
+  position: absolute;
+  background: #ff5400;
+  transform: rotate(-19.628deg) translate(105%, -50%);
+}
+
+.rotate-text p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.rotate-text h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* Newsletter section end */
 /* main section end */
 
 /* footer section styles start */
@@ -280,7 +362,8 @@ hr {
 
   /* tour section */
 
-  .tour-section {
+  .tour-section,
+  .newsletter-section {
     flex-direction: column;
   }
 
@@ -311,6 +394,17 @@ hr {
 
   .last-card-div {
     margin-top: 0;
+  }
+
+  /* newsletter  section */
+  .rotate-text {
+    padding: 10px 10px;
+    transform: rotate(-19.628deg) translate(100%, -60%);
+  }
+
+  .rotate-text h3,
+  p {
+    font-size: 1.5rem;
   }
 
   /* footer */
