@@ -45,6 +45,49 @@ main {
 /* common styles end */
 
 /* header section styles start */
+/* nav section start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 44px;
+}
+
+.nav-links ul li a {
+  color: #424247;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nav-links ul li:first-child a {
+  color: #ff5400;
+}
+
+.hamburg-icon {
+  font-size: 1.2rem;
+  display: none;
+}
+/* nav section end */
+
+/* banner section start */
 .banner-section {
   background: linear-gradient(
       to bottom,
@@ -115,6 +158,7 @@ main {
   border: none;
   padding: 15px 30px;
 }
+/* banner section end */
 /* header section styles end */
 
 /* main section start */
@@ -403,6 +447,16 @@ hr {
     padding: 20px;
   }
 
+  /* nav section */
+  .nav-links {
+    display: none;
+  }
+
+  .hamburg-icon {
+    display: block;
+  }
+
+  /* banner section */
   .banner-description {
     width: 100%;
   }
@@ -477,6 +531,11 @@ hr {
   header,
   main {
     padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .search-place {
