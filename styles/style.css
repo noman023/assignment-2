@@ -314,27 +314,33 @@ input[type="email"] {
   font-weight: 800;
 }
 
+.newsletter-img {
+  position: relative;
+}
+
 .newsletter-img img {
   width: 100%;
   height: 100%;
 }
 
 .rotate-text {
-  padding: 20px 40px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
   border-radius: 16px;
   position: absolute;
-  background: #ff5400;
-  transform: rotate(-19.628deg) translate(105%, -50%);
+  bottom: 10%;
+  left: 53%;
+  transform: rotate(-19.628deg);
 }
 
 .rotate-text p {
-  color: #fff;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 .rotate-text h3 {
-  color: #fff;
   font-size: 2rem;
   font-weight: 800;
 }
@@ -451,14 +457,9 @@ hr {
   }
 
   /* newsletter  section */
-  .rotate-text {
-    padding: 10px 10px;
-    transform: rotate(-19.628deg) translate(100%, -60%);
-  }
 
-  .rotate-text h3,
-  p {
-    font-size: 1.5rem;
+  .rotate-text * {
+    font-size: 1rem !important;
   }
 
   /* footer */
