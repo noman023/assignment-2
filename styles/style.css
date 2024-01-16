@@ -155,6 +155,55 @@ main {
 }
 /* Tour section style end */
 
+/* Destination section start */
+.destination-content {
+  text-align: center;
+}
+
+.destination-content > p {
+  max-width: 643px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.row2 {
+  grid-template-columns: 1.5fr 2fr 1fr;
+}
+
+.row3 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-text-container {
+  position: relative;
+}
+
+.overlay-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Destination section end */
+
 /* why choose us section start */
 .choose-us-content {
   width: 70%;
@@ -369,6 +418,11 @@ hr {
 
   .tour-img {
     margin-top: 20px;
+  }
+
+  /* destination */
+  .image-container {
+    grid-template-columns: 1fr;
   }
 
   /* why choose us section */
