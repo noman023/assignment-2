@@ -303,6 +303,53 @@ nav {
 
 /* why choose us section end */
 
+/* review section start */
+.review-section {
+  margin-bottom: 10%;
+}
+
+.review-content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-content > h2 {
+  margin-bottom: 24px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.review {
+  border: 2px solid #ff5400;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.review-head {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.review i {
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 5px solid #ff5400;
+  margin-bottom: 10px;
+}
+
+.review p {
+  text-align: justify;
+}
+
+/* review section end */
+
 /* Newsletter section start */
 .newsletter-section {
   display: flex;
@@ -472,7 +519,8 @@ hr {
   /* tour section */
 
   .tour-section,
-  .newsletter-section {
+  .newsletter-section,
+  .reviews-container {
     flex-direction: column;
   }
 
@@ -510,6 +558,11 @@ hr {
     margin-top: 0;
   }
 
+  /* review section */
+  .review-content {
+    width: 100%;
+  }
+
   /* newsletter  section */
 
   .rotate-text * {
@@ -544,6 +597,10 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
   }
 
   footer {
